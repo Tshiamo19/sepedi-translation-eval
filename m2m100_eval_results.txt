@@ -1,0 +1,76 @@
+M2M100 Translation Evaluation (English → Sepedi)
+==================================================
+
+Example 1:
+English         : On Monday, scientists from the Stanford University School of Medicine announced the invention of a new diagnostic tool that can sort cells by type: a tiny printable chip that can be manufactured using standard inkjet printers for possibly about one U.S. cent each.
+Reference Sepedi: Ka Mošupulogo, boramahlale ba go tšwa Sekolong sa Yunibesithi ya Stanford sa tša maphelo ba tsebišitše ka go hlangwa ga sedirišwa se sefsa sa tekolo seo se ka beakanyago disele ka mehuta: chip yeo e gatišegago ye nnyane yeo e ka tšweletšwago ka go šomiša metšhene ya go gatiša ya inkjet ya sente ye tee ya U.S. ka o tee.
+Predicted Sepedi: Pitsi ya Stanford University School of Medicine ya go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go.
+Similarity Score: 0.16
+--------------------------------------------------
+Example 2:
+English         : Lead researchers say this may bring early detection of cancer, tuberculosis, HIV and malaria to patients in low-income countries, where the survival rates for illnesses such as breast cancer can be half those of richer countries.
+Reference Sepedi: Banyakišiši ba ketapele ba re se se ka tliša temogo ya kankere, tuberculosis, HIV le malaria go balwetši kapela dinageng tša letseno la fase, moo ditekano tša go phela tša malwetši a bjalo ka kankere ya letswele di ka bago seripa sa tša dinaga tšeo di humilego.
+Predicted Sepedi: Pitsi ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go.
+Similarity Score: 0.03
+--------------------------------------------------
+Example 3:
+English         : The JAS 39C Gripen crashed onto a runway at around 9:30 am local time (0230 UTC) and exploded, closing the airport to commercial flights.
+Reference Sepedi: JAS 39C Gripen e wetše godimo ga moo sefofane se sepelago gona ka bo 9:30 am nako ya selegae (0230UTC) gomme ya thuthupa, gwa tswalelwa boemafofane bakeng sa difofane tša tefelo.
+Predicted Sepedi: JAS 39C Gripen go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go.
+Similarity Score: 0.23
+--------------------------------------------------
+Example 4:
+English         : The pilot was identified as Squadron Leader Dilokrit Pattavee.
+Reference Sepedi: Mootledi wa sefofane o tsebišitšwe bjalo ka Moetapele Dilokrit Pattavee.
+Predicted Sepedi: Pilota tše nnyane tše nnyane tše nnyane tše nnyane tše nnyane tše nnyane
+Similarity Score: 0.35
+--------------------------------------------------
+Example 5:
+English         : Local media reports an airport fire vehicle rolled over while responding.
+Reference Sepedi: Diphatlalatšo ya ditaba tša selegae di bega gore senamelwa sa moolo sa boemafofane se tokologile ge se bitšwa.
+Predicted Sepedi: Moka ya molao wa molao wa molao wa molao wa molao wa molao wa molao wa molao wa molao wa molao wa molao wa molao wa molao.
+Similarity Score: 0.22
+--------------------------------------------------
+
+Evaluation Scores
+==================================================
+BLEU score: 2.14
+chrF score: 11.11
+
+Error Analysis
+==================================================
+
+ Worst 5 Translations (Low Similarity < 0.5)
+
+Example 2 | Similarity: 0.03
+EN  : Lead researchers say this may bring early detection of cancer, tuberculosis, HIV and malaria to patients in low-income countries, where the survival rates for illnesses such as breast cancer can be half those of richer countries.
+REF : Banyakišiši ba ketapele ba re se se ka tliša temogo ya kankere, tuberculosis, HIV le malaria go balwetši kapela dinageng tša letseno la fase, moo ditekano tša go phela tša malwetši a bjalo ka kankere ya letswele di ka bago seripa sa tša dinaga tšeo di humilego.
+PRED: Pitsi ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go ya go.
+
+Example 1 | Similarity: 0.16
+EN  : On Monday, scientists from the Stanford University School of Medicine announced the invention of a new diagnostic tool that can sort cells by type: a tiny printable chip that can be manufactured using standard inkjet printers for possibly about one U.S. cent each.
+REF : Ka Mošupulogo, boramahlale ba go tšwa Sekolong sa Yunibesithi ya Stanford sa tša maphelo ba tsebišitše ka go hlangwa ga sedirišwa se sefsa sa tekolo seo se ka beakanyago disele ka mehuta: chip yeo e gatišegago ye nnyane yeo e ka tšweletšwago ka go šomiša metšhene ya go gatiša ya inkjet ya sente ye tee ya U.S. ka o tee.
+PRED: Pitsi ya Stanford University School of Medicine ya go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go.
+
+Example 5 | Similarity: 0.22
+EN  : Local media reports an airport fire vehicle rolled over while responding.
+REF : Diphatlalatšo ya ditaba tša selegae di bega gore senamelwa sa moolo sa boemafofane se tokologile ge se bitšwa.
+PRED: Moka ya molao wa molao wa molao wa molao wa molao wa molao wa molao wa molao wa molao wa molao wa molao wa molao wa molao.
+
+Example 3 | Similarity: 0.23
+EN  : The JAS 39C Gripen crashed onto a runway at around 9:30 am local time (0230 UTC) and exploded, closing the airport to commercial flights.
+REF : JAS 39C Gripen e wetše godimo ga moo sefofane se sepelago gona ka bo 9:30 am nako ya selegae (0230UTC) gomme ya thuthupa, gwa tswalelwa boemafofane bakeng sa difofane tša tefelo.
+PRED: JAS 39C Gripen go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go go.
+
+Example 4 | Similarity: 0.35
+EN  : The pilot was identified as Squadron Leader Dilokrit Pattavee.
+REF : Mootledi wa sefofane o tsebišitšwe bjalo ka Moetapele Dilokrit Pattavee.
+PRED: Pilota tše nnyane tše nnyane tše nnyane tše nnyane tše nnyane tše nnyane
+
+ Longest English Sentence
+Example 1 | Length: 43 words
+EN: On Monday, scientists from the Stanford University School of Medicine announced the invention of a new diagnostic tool that can sort cells by type: a tiny printable chip that can be manufactured using standard inkjet printers for possibly about one U.S. cent each.
+
+ Shortest English Sentence
+Example 4 | Length: 9 words
+EN: The pilot was identified as Squadron Leader Dilokrit Pattavee.

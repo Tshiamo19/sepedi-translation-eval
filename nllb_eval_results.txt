@@ -1,0 +1,61 @@
+NLLB Translation Evaluation (English → Sepedi)
+==================================================
+
+Example 1:
+English         : On Monday, scientists from the Stanford University School of Medicine announced the invention of a new diagnostic tool that can sort cells by type: a tiny printable chip that can be manufactured using standard inkjet printers for possibly about one U.S. cent each.
+Reference Sepedi: Ka Mošupulogo, boramahlale ba go tšwa Sekolong sa Yunibesithi ya Stanford sa tša maphelo ba tsebišitše ka go hlangwa ga sedirišwa se sefsa sa tekolo seo se ka beakanyago disele ka mehuta: chip yeo e gatišegago ye nnyane yeo e ka tšweletšwago ka go šomiša metšhene ya go gatiša ya inkjet ya sente ye tee ya U.S. ka o tee.
+Predicted Sepedi: Ka Mošupologo, bo-rathutamahlale ba Yunibesithing ya Stanford School of Medicine ba ile ba tsebiša ka go hlolwa ga sedirišwa se sefsa sa go hlahloba seo se kgonago go arola disele ka mohuta: chip e nyenyane yeo e ka gatišwago yeo e ka dirwago ka go diriša diphrinta tša go ntšha enke tše di tlwaelegilego ka mo e ka bago sente e tee ya Amerika e nngwe le e nngwe.
+Similarity Score: 0.16
+--------------------------------------------------
+Example 2:
+English         : Lead researchers say this may bring early detection of cancer, tuberculosis, HIV and malaria to patients in low-income countries, where the survival rates for illnesses such as breast cancer can be half those of richer countries.
+Reference Sepedi: Banyakišiši ba ketapele ba re se se ka tliša temogo ya kankere, tuberculosis, HIV le malaria go balwetši kapela dinageng tša letseno la fase, moo ditekano tša go phela tša malwetši a bjalo ka kankere ya letswele di ka bago seripa sa tša dinaga tšeo di humilego.
+Predicted Sepedi: Banyakišiši ba bagolo ba re se se ka tliša go lemogwa ga kankere, bolwetši bja mafahla, HIV le malaria ka nako e sa le pele go balwetši ba dinageng tše di nago le letseno le le tlase, moo tekanyo ya go phologa ga malwetši a bjalo ka kankere ya matswele e ka bago seripa sa dinaga tše di humilego.
+Similarity Score: 0.46
+--------------------------------------------------
+Example 3:
+English         : The JAS 39C Gripen crashed onto a runway at around 9:30 am local time (0230 UTC) and exploded, closing the airport to commercial flights.
+Reference Sepedi: JAS 39C Gripen e wetše godimo ga moo sefofane se sepelago gona ka bo 9:30 am nako ya selegae (0230UTC) gomme ya thuthupa, gwa tswalelwa boemafofane bakeng sa difofane tša tefelo.
+Predicted Sepedi: JAS 39C Gripen e ile ya wa tseleng ya go fofa mo e ka bago ka 9:30 a.m. ka nako ya lefelong (0230 UTC) gomme ya thuthupa, ya tswalela boema-fofane go fofa ga kgwebo.
+Similarity Score: 0.71
+--------------------------------------------------
+Example 4:
+English         : The pilot was identified as Squadron Leader Dilokrit Pattavee.
+Reference Sepedi: Mootledi wa sefofane o tsebišitšwe bjalo ka Moetapele Dilokrit Pattavee.
+Predicted Sepedi: Mofofisi wa sekepe o ile a tsebja e le Moetapele wa Sehlopha sa Dilokrit Pattavee.
+Similarity Score: 0.65
+--------------------------------------------------
+Example 5:
+English         : Local media reports an airport fire vehicle rolled over while responding.
+Reference Sepedi: Diphatlalatšo ya ditaba tša selegae di bega gore senamelwa sa moolo sa boemafofane se tokologile ge se bitšwa.
+Predicted Sepedi: Mecha ya ditaba ya lefelong leo e bega gore koloi ya mollo ya boema-fofaneng e ile ya retologa ge e be e arabela.
+Similarity Score: 0.62
+--------------------------------------------------
+
+Evaluation Scores
+==================================================
+BLEU score: 11.85
+chrF score: 52.06
+
+Error Analysis
+==================================================
+
+ Worst 5 Translations (Low Similarity < 0.5)
+
+Example 1 | Similarity: 0.16
+EN  : On Monday, scientists from the Stanford University School of Medicine announced the invention of a new diagnostic tool that can sort cells by type: a tiny printable chip that can be manufactured using standard inkjet printers for possibly about one U.S. cent each.
+REF : Ka Mošupulogo, boramahlale ba go tšwa Sekolong sa Yunibesithi ya Stanford sa tša maphelo ba tsebišitše ka go hlangwa ga sedirišwa se sefsa sa tekolo seo se ka beakanyago disele ka mehuta: chip yeo e gatišegago ye nnyane yeo e ka tšweletšwago ka go šomiša metšhene ya go gatiša ya inkjet ya sente ye tee ya U.S. ka o tee.
+PRED: Ka Mošupologo, bo-rathutamahlale ba Yunibesithing ya Stanford School of Medicine ba ile ba tsebiša ka go hlolwa ga sedirišwa se sefsa sa go hlahloba seo se kgonago go arola disele ka mohuta: chip e nyenyane yeo e ka gatišwago yeo e ka dirwago ka go diriša diphrinta tša go ntšha enke tše di tlwaelegilego ka mo e ka bago sente e tee ya Amerika e nngwe le e nngwe.
+
+Example 2 | Similarity: 0.46
+EN  : Lead researchers say this may bring early detection of cancer, tuberculosis, HIV and malaria to patients in low-income countries, where the survival rates for illnesses such as breast cancer can be half those of richer countries.
+REF : Banyakišiši ba ketapele ba re se se ka tliša temogo ya kankere, tuberculosis, HIV le malaria go balwetši kapela dinageng tša letseno la fase, moo ditekano tša go phela tša malwetši a bjalo ka kankere ya letswele di ka bago seripa sa tša dinaga tšeo di humilego.
+PRED: Banyakišiši ba bagolo ba re se se ka tliša go lemogwa ga kankere, bolwetši bja mafahla, HIV le malaria ka nako e sa le pele go balwetši ba dinageng tše di nago le letseno le le tlase, moo tekanyo ya go phologa ga malwetši a bjalo ka kankere ya matswele e ka bago seripa sa dinaga tše di humilego.
+
+ Longest English Sentence
+Example 1 | Length: 43 words
+EN: On Monday, scientists from the Stanford University School of Medicine announced the invention of a new diagnostic tool that can sort cells by type: a tiny printable chip that can be manufactured using standard inkjet printers for possibly about one U.S. cent each.
+
+ Shortest English Sentence
+Example 4 | Length: 9 words
+EN: The pilot was identified as Squadron Leader Dilokrit Pattavee.
